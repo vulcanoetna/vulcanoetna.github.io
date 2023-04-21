@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Curiosita</title>
+</head>
+<body>
+    
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+        <a href="ambiente.html">ambiente</a>
+        <a href="clima.html">clima</a>
+        <a href="storia.html">Storia</a>
+        <a href="curiosita.html">Curiosità</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+
+    <div class="container">
+
+      <div class="row" style="height: 200px;">
+        <h1>Clicca il bottone per vedere delle curiosita sull'Etna</h1>
+      </div>
+
+      <div class="row">
+
+        <button class="button" role="button" onclick="estrazione()">Clicca</button>
+
+      </div>
+
+      <div class="row">
+
+        <ul id="testo"></ul>
+
+      </div>
+
+      <div class="row">
+      
+          <div class="slideshow-container">
+            <h1>Immagini panoramiche Etna</h1>
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="immagini/etna1.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="immagini/etna2.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="immagini/etna3.jpg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div class="row" style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              
+            </div>
+
+        
+  
+      </div>
+
+    </div>
+        
+    <script src="js/curiosita.js"></script>
+
+    <footer>
+      <div>Casu Van Hoan  --  Cimò Stefano  --  Cogliati Mattia  --  Galushka Serhii  --  Nava Simone  --  Yessou Nadir</div>
+    </footer>
+</body>
+</html>
